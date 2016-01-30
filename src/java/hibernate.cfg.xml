@@ -7,6 +7,6 @@
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
     <!--Aqui se le uindica a hivbernate dnde debe de hacer la conexion-->
-    <mapping class="model.Usuario"></mapping>
+    <mapping class="modell.Usuario"></mapping>
   </session-factory>
 </hibernate-configuration>
