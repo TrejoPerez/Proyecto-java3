@@ -16,6 +16,7 @@ import org.hibernate.Transaction;
 public class probarEntidades {
     public static void main(String[] args) {
         try {
+            /*
             //Paso 1->Generar el session factory, todo esto es un candado y se tiene nque liberar
             //el candado para poder hacer acciones SQL
             SessionFactory fuck =HibernateUtilidades.getSessionFactory();
@@ -28,8 +29,21 @@ public class probarEntidades {
             sesion.save(usuario);
             tranza.commit();
             sesion.close();
-            System.out.println("Usuario guardado con exito");
+            */    
+            //Cuando se ejecuta este constructor, se realiza la transaccion
+            DAOUsuario dao = new DAOUsuario();
+            
+            
+            
+            /*Usuario u = new Usuario("juan","Campos");
+            dao.guardar(u);*/
+            
+            
+            
+            
+            System.out.println("Transaccion exitosa: "+ dao.buscarPorId(1));
         } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
    
     }

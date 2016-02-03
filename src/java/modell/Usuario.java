@@ -61,7 +61,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "id=" + id + ", login=" + login + ", password=" + password + '}';
+        return "Usuario que da el metodo to string {" + "id=" + id + ", login=" + login + ", password=" + password + '}';
     }
     
     //Este sirve para poder borrar, buscar y actualizar por id
